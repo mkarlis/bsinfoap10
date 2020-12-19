@@ -10,7 +10,7 @@ public class Kamm {
 		int ikz = Integer.parseInt(kz);
 		int rows = 0;
 		int base = 20;
-		int countkk = (int) Math.floor(base/ikz);
+		int countshortline = (int) Math.floor((base-ikz)/(ikz-1));
 		
 		for(int i =0; i<ikz; i++)
 		{
@@ -18,7 +18,7 @@ public class Kamm {
 			rows++;
 			if(i==ikz-1)
 				break;
-			for(int j =0; j<countkk; j++)
+			for(int j =0; j<countshortline; j++)
 			{
 				System.out.println("*");
 				rows++;
